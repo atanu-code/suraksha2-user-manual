@@ -3,46 +3,115 @@ import logoLight from "./logo-light.svg";
 
 export function Welcome() {
   return (
-    <main className="flex items-center justify-center pt-16 pb-4">
-      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
-        <header className="flex flex-col items-center gap-9">
-          <div className="w-[500px] max-w-[100vw] p-4">
-            <img
-              src={logoLight}
-              alt="React Router"
-              className="block w-full dark:hidden"
-            />
-            <img
-              src={logoDark}
-              alt="React Router"
-              className="hidden w-full dark:block"
-            />
-          </div>
-        </header>
-        <div className="max-w-[300px] w-full space-y-6 px-4">
-          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-              What&apos;s next?
-            </p>
-            <ul>
-              {resources.map(({ href, text, icon }) => (
-                <li key={href}>
-                  <a
-                    className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {icon}
-                    {text}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+
+
+
+    <>
+
+      <h1>Welcome to MyApp Documentation</h1>
+
+      <p>This comprehensive guide will help you get started with MyApp and make the most of its powerful
+        features. Whether you're a new user or looking to explore advanced functionality, you'll find
+        everything you need here.</p>
+
+      <div className="note">
+        <strong>New to MyApp?</strong> Start with our <a href="#quickstart">Quick Start Guide</a> to get up
+        and running in minutes.
       </div>
-    </main>
+
+      <h2>What is MyApp?</h2>
+
+      <p>MyApp is a comprehensive productivity platform designed to streamline your workflow and boost team
+        collaboration. With powerful analytics, seamless integrations, and an intuitive interface, it's the
+        perfect solution for businesses of all sizes.</p>
+
+      <h3>Key Features</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+            <th>Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dashboard Analytics</td>
+            <td>Real-time insights and performance metrics</td>
+            <td>All Plans</td>
+          </tr>
+          <tr>
+            <td>Team Collaboration</td>
+            <td>Share projects and work together seamlessly</td>
+            <td>Pro & Enterprise</td>
+          </tr>
+          <tr>
+            <td>API Access</td>
+            <td>Integrate with your existing tools</td>
+            <td>Enterprise</td>
+          </tr>
+          <tr>
+            <td>Custom Reports</td>
+            <td>Generate detailed reports and exports</td>
+            <td>Pro & Enterprise</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Getting Started</h2>
+
+      <p>Follow these simple steps to set up your MyApp account:</p>
+
+      <ol className="step-list">
+        <li>
+          <strong>Create Your Account</strong><br />
+          Sign up with your email address and choose a secure password.
+        </li>
+        <li>
+          <strong>Verify Your Email</strong><br />
+          Check your inbox and click the verification link we sent you.
+        </li>
+        <li>
+          <strong>Complete Your Profile</strong><br />
+          Add your company information and customize your settings.
+        </li>
+        <li>
+          <strong>Invite Team Members</strong><br />
+          Add your colleagues to start collaborating immediately.
+        </li>
+      </ol>
+
+      <h3>Installation Requirements</h3>
+
+      <div className="code-block">
+                    // Minimum system requirements
+        Operating System: Windows 10+, macOS 10.14+, or Linux
+        RAM: 4GB minimum, 8GB recommended
+        Storage: 2GB available space
+        Internet: Broadband connection required
+      </div>
+
+      <div className="warning">
+        <strong>Important:</strong> Make sure to keep your MyApp desktop client updated to the latest
+        version for the best performance and security.
+      </div>
+
+      <h2>Need Help?</h2>
+
+      <p>If you run into any issues or have questions, we're here to help:</p>
+
+      <ul>
+        <li>📧 Email us at <strong>support@myapp.com</strong></li>
+        <li>💬 Live chat available 24/7</li>
+        <li>📞 Call us at <strong>1-800-MYAPP-01</strong></li>
+        <li>🎥 Watch our <a href="#">video tutorials</a></li>
+      </ul>
+
+      <p>Ready to dive deeper? Check out our <a href="#dashboard">Dashboard Guide</a> or explore the <a
+        href="#api">API Reference</a> for developers.</p>
+
+    </>
   );
 }
 
