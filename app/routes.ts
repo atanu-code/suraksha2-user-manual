@@ -16,9 +16,9 @@ export default [
     route("/getting-started/home-screen", "routes/getting-started/home-screen.tsx"),
 
     // // Reporting
-    // route("/reporting/incident", "routes/reporting/incident.tsx"),
-    // route("/reporting/observation", "routes/reporting/observation.tsx"),
-    // route("/reporting/safety-walk", "routes/reporting/safety-walk.tsx"),
+    route("/reporting/incident", "routes/reporting/incident.tsx"),
+    route("/reporting/observation", "routes/reporting/observation.tsx"),
+    route("/reporting/safety-walk", "routes/reporting/safety-walk.tsx"),
 
     // // Notifications & Alerts
     // route("/notifications/types", "routes/notifications/types.tsx"),

@@ -31,14 +31,15 @@ const navSections: NavSection[] = [
             { label: "Home Screen", icon: <>🏠</>, to: "/getting-started/home-screen" },
         ],
     },
-    // {
-    //     title: "Reporting",
-    //     items: [
-    //         { label: "Report an Incident", icon: <>🚨</>, to: "/reporting/incident" },
-    //         { label: "Report an Observation", icon: <>👀</>, to: "/reporting/observation" },
-    //         { label: "Safety Walk", icon: <>🚶</>, to: "/reporting/safety-walk" },
-    //     ],
-    // },
+    {
+        title: "Reporting",
+        items: [
+            { label: "Report an Observation", icon: <>👀</>, to: "/reporting/observation" },
+            { label: "Report an Incident", icon: <>🚨</>, to: "/reporting/incident" },
+
+            { label: "Safety Walk", icon: <>🚶</>, to: "/reporting/safety-walk" },
+        ],
+    },
     // {
     //     title: "Notifications & Alerts",
     //     items: [
