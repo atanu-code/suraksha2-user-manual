@@ -5,8 +5,8 @@ import observerSay from "../../assets/images/observer-say.png";
 import improvementAction from "../../assets/images/improvement-action.png";
 import selfAssessment from "../../assets/images/self-assessment.png";
 import safetyWalkReview from "../../assets/images/safetywalk-review.png";
-import SAFETYWALK5 from "../../assets/images/SAFE5DESK.png";
-import SAFETYWALK5MOB from "../../assets/images/SAFE5MOB.png";
+import SAFETYWALK5 from "../../assets/images/SAFETYWALK5.png";
+import SAFETYWALK5MOB from "../../assets/images/SAFETYWALK5MOB.png";
 import SAFETYWALK1 from "../../assets/images/SAFE1.png";
 import SAFETYWALK1MOB from "../../assets/images/SAFE1MOB.png";
 import SAFETYWALK2 from "../../assets/images/SAFE2DES.png";
@@ -15,6 +15,9 @@ import SAFETYWALK3 from "../../assets/images/SAFE3DESK.png";
 import SAFETYWALK3MOB from "../../assets/images/SAFE3MOB.png";
 import SAFETYWALK4 from "../../assets/images/SAFE4DESK.png";
 import SAFETYWALK4MOB from "../../assets/images/SAFE4MOB.png";
+import capades from "../../assets/images/capa desk.png";
+import capamob from "../../assets/images/safetywalk capa.png";
+
 
 
 export function meta() {
@@ -269,6 +272,12 @@ export default function SafetyWalkReporting() {
                 </li>
               </ul>
             </div>
+            <div className="warning">
+              <p>
+                <strong>Important:</strong> If you select "No", you can proceed directly to submit your safety walk report. 
+                If you select "Yes", you must create a CAPA (Corrective and Preventive Action) form before submitting.
+              </p>
+            </div>
             <p>
               This information helps safety personnel prioritize and track
               necessary improvements identified during the safety walk.
@@ -406,7 +415,72 @@ export default function SafetyWalkReporting() {
           </div>
 
           <div className="step">
-            <h2>Step 5: Preview & Submit</h2>
+            <h2>Step 5: CAPA Form (If required)</h2>
+            <p>
+              If you selected "Yes" for follow-up actions in Step 3, you must complete 
+              one or more CAPA (Corrective and Preventive Action) forms to address the identified issues.
+            </p>
+            
+            <p>The CAPA form includes the following required fields:</p>
+            <div className="note">
+              <ul>
+                <li>
+                  ✅ <strong>Timing Type:</strong> *
+                  <p>Select between "Short-term" or "Long-term" action</p>
+                </li>
+                <li>
+                  ✅ <strong>Action Type:</strong> *
+                  <p>Specify whether this is a "Corrective" or "Preventive" action</p>
+                </li>
+                <li>
+                  ✅ <strong>Assign To:</strong> *
+                  <p>Select the responsible employee from a dropdown list</p>
+                </li>
+                <li>
+                  ✅ <strong>Deadline:</strong> *
+                  <p>Set a completion date (only current or future dates are accepted)</p>
+                </li>
+                <li>
+                  ✅ <strong>Task Description:</strong> *
+                  <p>Provide detailed description of the action to be taken</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="warning">
+              <p>
+                <strong>Note:</strong> You can create multiple CAPA forms to assign tasks to different employees 
+                if multiple actions are required. All CAPA forms must be completed before submitting the safety walk report.
+              </p>
+            </div>
+          </div>
+          <div className="image-row">
+            <div className="image-container desktop">
+              <div className="image-wrapper">
+                <ImageModal
+                  thumbnail={capades}
+                  alt="Figure 11: Observation Preview - Desktop"
+                />
+              </div>
+              <p className="image-caption">
+                <em>Figure 5.1: Capa form - Desktop</em>
+              </p>
+            </div>
+            <div className="image-container mobile">
+              <div className="image-wrapper">
+                <ImageModal
+                  thumbnail={capamob}
+                  alt="Figure 12: Observation Preview - Mobile"
+                />
+              </div>
+              <p className="image-caption">
+                <em>Figure 5.2:capa form - Mobile</em>
+              </p>
+            </div>
+          </div>
+
+          <div className="step">
+            <h2>Step 6: Preview & Submit</h2>
             <p>
               The final step allows you to review all information before
               submitting the safety walk report.
@@ -424,6 +498,7 @@ export default function SafetyWalkReporting() {
                 <li>✅ Self-assessment responses</li>
                 <li>✅ Team members involved in the safety walk</li>
                 <li>✅ Uploaded images from the safety walk</li>
+                <li>✅ CAPA forms (if any were created)</li>
               </ul>
             </div>
             <div className="warning">
@@ -447,7 +522,7 @@ export default function SafetyWalkReporting() {
                 />
               </div>
               <p className="image-caption">
-                <em>Figure 5.1: preview and submit - Desktop</em>
+                <em>Figure 6.1: preview and submit - Desktop</em>
               </p>
             </div>
             <div className="image-container mobile">
@@ -458,7 +533,7 @@ export default function SafetyWalkReporting() {
                 />
               </div>
               <p className="image-caption">
-                <em>Figure 5.2:preview and submit - Mobile</em>
+                <em>Figure 6.2:preview and submit - Mobile</em>
               </p>
             </div>
           </div>
