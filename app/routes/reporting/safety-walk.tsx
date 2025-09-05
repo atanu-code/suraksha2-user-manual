@@ -237,7 +237,7 @@ export default function SafetyWalkReporting() {
                 />
               </div>
               <p className="image-caption">
-                <em>Figure 2.2:preview and submit - Mobile</em>
+                <em>Figure 2.2:Observer Say - Mobile</em>
               </p>
             </div>
           </div>

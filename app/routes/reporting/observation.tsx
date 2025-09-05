@@ -135,15 +135,15 @@ export default function ObservationReporting() {
                     <div className="image-row">
                             <div className="image-container desktop">
                                 <div className="image-wrapper">
-                                    <ImageModal thumbnail={observationDesktop1} alt="Figure 11: Observation Preview - Desktop" />
+                                    <ImageModal thumbnail={observationDesktop1} alt="Figure 2.1: Observation and Risk details - Desktop" />
                                 </div>
-                                <p className="image-caption"><em>Figure 1.1: Observation acknowledgement - Desktop</em></p>
+                                <p className="image-caption"><em>Figure 2.1: Observation and Risk details - Desktop</em></p>
                             </div>
                             <div className="image-container mobile">
                                 <div className="image-wrapper">
-                                    <ImageModal thumbnail={observationMobile2} alt="Figure 12: Observation Preview - Mobile" />
+                                    <ImageModal thumbnail={observationMobile2} alt="Figure 2.2: Observation and Risk details - Mobile" />
                                 </div>
-                                <p className="image-caption"><em>Figure 1.2: Observation acknowledgement - Mobile</em></p>
+                                <p className="image-caption"><em>Figure 2.2: Observation and Risk details - Mobile</em></p>
                             </div>
                         </div>
 
@@ -180,15 +180,15 @@ export default function ObservationReporting() {
                         <div className="image-row">
                             <div className="image-container desktop">
                                 <div className="image-wrapper">
-                                    <ImageModal thumbnail={observationDesktop3} alt="Figure 11: Observation Preview - Desktop" />
+                                    <ImageModal thumbnail={observationDesktop3} alt="Figure 3.1: Observation Preview - Desktop" />
                                 </div>
-                                <p className="image-caption"><em>Figure 11: Observation Preview - Desktop</em></p>
+                                <p className="image-caption"><em>Figure 3.1: Observation Preview - Desktop</em></p>
                             </div>
                             <div className="image-container mobile">
                                 <div className="image-wrapper">
-                                    <ImageModal thumbnail={observationMobile3} alt="Figure 12: Observation Preview - Mobile" />
+                                    <ImageModal thumbnail={observationMobile3} alt="Figure 3.2: Observation Preview - Mobile" />
                                 </div>
-                                <p className="image-caption"><em>Figure 12: Observation Preview - Mobile</em></p>
+                                <p className="image-caption"><em>Figure 3.2: Observation Preview - Mobile</em></p>
                             </div>
                         </div>
                     </div>
