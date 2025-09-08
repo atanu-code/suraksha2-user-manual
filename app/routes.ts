@@ -20,6 +20,18 @@ export default [
     route("/reporting/observation", "routes/reporting/observation.tsx"),
     route("/reporting/safety-walk", "routes/reporting/safety-walk.tsx"),
 
+
+
+    route("/reporting_action/incident", "routes/reporting_action/incident.tsx"),
+     route("/reporting_action/observation", "routes/reporting_action/observation.tsx"),
+
+
+
+
+    
+     //route("/reporting_action/observation", "routes/notifications/responding.tsx"),
+     //route("/reporting_action/safetywalk", "routes/notifications/preferences.tsx"),
+
     // // Notifications & Alerts
     // route("/notifications/types", "routes/notifications/types.tsx"),
     // route("/notifications/responding", "routes/notifications/responding.tsx"),
