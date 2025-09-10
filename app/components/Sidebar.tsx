@@ -46,7 +46,7 @@ const navSections: NavSection[] = [
             { label: "After Report an Observation", icon: <>👀</>, to: "/reporting_action/observation" },
             { label: "After Report an Incident", icon: <>🚨</>, to: "/reporting_action/incident" },
 
-            { label: "After Report a Safety Walk", icon: <>🚶</>, to: "/reporting/safety-walk" },
+            { label: "After Report a Safety Walk", icon: <>🚶</>, to: "/reporting_action/safety-walk" },
         ],
     },
     // {

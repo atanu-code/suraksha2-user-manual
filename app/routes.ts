@@ -24,6 +24,7 @@ export default [
 
     route("/reporting_action/incident", "routes/reporting_action/incident.tsx"),
      route("/reporting_action/observation", "routes/reporting_action/observation.tsx"),
+      route("/reporting_action/safety-walk", "routes/reporting_action/safety_walk.tsx"),
 
 
 
